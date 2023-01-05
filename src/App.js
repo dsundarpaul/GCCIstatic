@@ -16,10 +16,10 @@ function App() {
       </div>
       <Footer /> */}
       <BrowserRouter>
-        <Container maxWidth="full">
+        <Container maxWidth="full" className='!p-0'>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home className='bg-[#f5f5f5]' />} />
             <Route path="/home" element={<Home />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contact-us" element={<Contactus />} />
