@@ -46,9 +46,6 @@ code {
   }
   
   @media screen and (max-width: 600px) {
-    .navbar {
-      
-    }
     .navbar__hear__text {
       width: 30px;
     }
