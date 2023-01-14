@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+.gold-ring {
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(155.1% 155.1% at 50% 53%, #9D5D1C 0%, rgba(225, 201, 139, 0) 71.09%);
+    /* background: radial-gradient(158.1% 158.1% at 50% 50%, #9D5D1C 0%, rgba(169, 112, 47, 0.827101) 35.21%, rgba(225, 201, 139, 0) 35.22%); */
+    border-radius: 50%;
+}
+.inner-white {
+    width: 96%;
+    height: 96%;
+    background-color: #F5F5DC;
+    border-radius: 50%;
+}
+.ring-container-right {
+    position: absolute;
+    right: -240px
+}
+.ring-container-left {
+    position: absolute;
+    left: -240px
+}
+
+.main-content {
+    text-align: center;
+}
+.header {
+    font-family: 'Moon Dance', cursive !important;
+    font-size: 40px !important;
+}
+.content {
+    font-family: 'Rowdies', cursive;
+    font-size: 80px !important;
+}

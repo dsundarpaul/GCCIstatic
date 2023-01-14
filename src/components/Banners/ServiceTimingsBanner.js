@@ -1,0 +1,29 @@
+import { Typography } from '@mui/material'
+import React from 'react'
+import './ServiceTimingsBannerStyles.css'
+
+const ServiceTimingsBanner = () => {
+
+  return (
+    <div className='banner__pad__marg overflow w-full h-[500px] bg-[#F5F5DC] flex justify-center items-center'>
+
+        <div className='ring-container-right'>
+            <div className='gold-ring flex justify-center items-center'>
+                <div className='inner-white'></div>
+            </div>
+        </div>
+        <div className='main-content'>
+            <Typography className='header'>Service Timings</Typography>
+            <Typography className='content'>Sunday 9:00-11:00am</Typography>
+            <Typography className='content-link'>Online Serive: www.gcci/live.com</Typography>
+        </div>
+        <div className='ring-container-left'>
+            <div className='gold-ring flex justify-center items-center'>
+                <div className='inner-white'></div>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default ServiceTimingsBanner

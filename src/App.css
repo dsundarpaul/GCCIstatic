@@ -1,0 +1,11 @@
+.App {
+    height: 100%;
+    /* background-image: url("./assets/bg/cool-background.png"); */
+    /* background-image: url("./assets/bg/red-sky.jpg");
+    background-size: contain; */
+    background-repeat: no-repeat;
+    /* background-image: url('./assets/wave.svg'); */
+    background-image: url('./assets/wave-opa-low.svg');
+    background-position: bottom;
+    background-attachment: fixed;
+}
