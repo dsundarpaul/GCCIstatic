@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Container } from '@mui/material'
 import Events from './views/Events';
 import Contactus from './views/Contactus';
+import Offerings from './views/Offerings';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home className='bg-[#f5f5f5]' />} />
             <Route path="/home" element={<Home />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/offerings" element={<Offerings />} />
             <Route path="/contact-us" element={<Contactus />} />
             {/* <Route path="/auth" exact element={<Auth />} />s */}
           </Routes>
