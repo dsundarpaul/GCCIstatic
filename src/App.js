@@ -7,6 +7,7 @@ import { Container } from '@mui/material'
 import Events from './views/Events';
 import Contactus from './views/Contactus';
 import Aboutus from './views/Aboutus';
+import Offerings from './views/Offerings';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/about-us" element={<Aboutus />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/offerings" element={<Offerings />} />
             <Route path="/contact-us" element={<Contactus />} />
             {/* <Route path="/auth" exact element={<Auth />} />s */}
           </Routes>

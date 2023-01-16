@@ -27,7 +27,7 @@ const Navbar = () => {
           <li className='navbar__menu' onClick={() => navigate('/events')}>
             Events
           </li>
-          <li className='navbar__menu' onClick={() => navigate('/contact-us')}>
+          <li className='navbar__menu' onClick={() => navigate('/offerings')}>
             Offerings
           </li>
           <li className='navbar__menu' onClick={() => navigate('/contact-us')}>
