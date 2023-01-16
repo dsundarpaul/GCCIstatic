@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Container } from '@mui/material'
 import Events from './views/Events';
 import Contactus from './views/Contactus';
+import Aboutus from './views/Aboutus';
 import Offerings from './views/Offerings';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home className='bg-[#f5f5f5]' />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/about-us" element={<Aboutus />} />
             <Route path="/events" element={<Events />} />
             <Route path="/offerings" element={<Offerings />} />
             <Route path="/contact-us" element={<Contactus />} />

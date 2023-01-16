@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate()
 
   return (
-    <div className='w-100 bg-[#FFE15D] h-auto px-10 items-center'>
+    <div className='w-100 bg-[#FFE15D] h-auto px-10 items-center sticky top-0 z-10'>
       <div className='flex justify-between items-center'>
         <div>
           <img src={logo} alt='logo' className='w-[150px]' />
@@ -26,6 +26,9 @@ const Navbar = () => {
           </li>
           <li className='navbar__menu' onClick={() => navigate('/events')}>
             Events
+          </li>
+          <li className='navbar__menu' onClick={() => navigate('/offerings')}>
+            Offerings
           </li>
           <li className='navbar__menu' onClick={() => navigate('/contact-us')}>
             Contact us
