@@ -2,6 +2,7 @@ import React from 'react'
 import header_img from '../assets/events.jpg' 
 import AboutPastor from '../components/AboutPastor/AboutPastor'
 import ServiceTimingsBanner from '../components/Banners/ServiceTimingsBanner'
+import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import Maps from '../components/Maps'
 import VisionMissionBanner from '../components/VisionMissionBanner/VisionMissionBanner'
 // import ServiceTimingsBanner from '../assets/banners/ServiceTImingsBanner.png'
@@ -13,8 +14,8 @@ const Home = () => {
       <div id='hero-header'>
         <img src={header_img} alt='' className='w-full' />
       </div>
-
       <VisionMissionBanner />
+      {/* <HeroCarousel /> */}
 
       <div className='w-full flex justify-center my-10'>
         <ServiceTimingsBanner />

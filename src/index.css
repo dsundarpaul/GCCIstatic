@@ -54,11 +54,20 @@ code {
   }
   
   @media screen and (max-width: 600px) {
+    .reponsive__nav {
+      display: table-column !important;
+    }
     .navbar__hear__text {
       width: 30px;
+      font-size: 20px !important;
+      font-weight: 100;
     }
     .navbar__menu__parent {
       display: grid;
+    }
+
+    .reponsive__banneer_serviceTimings {
+      display: none;
     }
   }
 }
