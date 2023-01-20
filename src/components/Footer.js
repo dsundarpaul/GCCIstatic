@@ -11,7 +11,7 @@ const Footer = () => {
         {/* FOOTER DIVISON 1 */}
         <div className='w-full'>
 
-          <dib className='text-4xl font-extrabold'>GCCI</dib>
+          <div className='text-4xl font-extrabold'>GCCI</div>
           <div className='mt-8'>
             <div className='text-2xl'>
               THE WORD OF GOD IS OUR <b>AUTHORITY</b>
