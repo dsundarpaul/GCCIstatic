@@ -5,9 +5,9 @@ const Footer = () => {
   const navigate = useNavigate()
 
   return (
-    <div className='w-100 bg-[#FFE15D] border-4 border-[#E4A23E] h-auto'>
+    <div className='w-100 bg-[#C10000] py-1 text-white h-auto'>
       <div className='mx-10 my-8 flex justify-evenly'>
-
+        
         {/* FOOTER DIVISON 1 */}
         <div className='w-full'>
 
@@ -23,13 +23,13 @@ const Footer = () => {
         </div>
 
         {/* FOOTER DIVISION 2 */}
-        <div className='w-full flex justify-center leading-10'>
+        <div className='w-full flex justify-center leading-10 text-center'>
           <ul>
-            <li onClick={() => navigate('/home')} className='hover:cursor-pointer hover:bg-red-300'>Home</li>
-            <li onClick={() => navigate('/about-us')} className='hover:cursor-pointer'>About Us</li>
-            <li onClick={() => navigate('/events')} className='hover:cursor-pointer'>Events</li>
-            <li onClick={() => navigate('/offerings')} className='hover:cursor-pointer'>Offerings</li>
-            <li onClick={() => navigate('/contact-us')} className='hover:cursor-pointer'>Contact Us</li>
+            <li onClick={() => navigate('/home')} className='hover:cursor-pointer px-2 rounded-lg hover:bg-[#8c1111] hover:scale-110'>Home</li>
+            <li onClick={() => navigate('/about-us')} className='hover:cursor-pointer px-2 rounded-lg hover:bg-[#8c1111] hover:scale-110'>About Us</li>
+            <li onClick={() => navigate('/events')} className='hover:cursor-pointer px-2 rounded-lg hover:bg-[#8c1111] hover:scale-110'>Events</li>
+            <li onClick={() => navigate('/offerings')} className='hover:cursor-pointer px-2 rounded-lg hover:bg-[#8c1111] hover:scale-110'>Offerings</li>
+            <li onClick={() => navigate('/contact-us')} className='hover:cursor-pointer px-2 rounded-lg hover:bg-[#8c1111] hover:scale-110'>Contact Us</li>
           </ul>
         </div>
 
