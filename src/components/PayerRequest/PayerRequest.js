@@ -1,4 +1,4 @@
-import { TextField, Button, Typography } from '@mui/material'
+import { TextField, Button, Typography, Grid } from '@mui/material'
 import React, { useState } from 'react'
 
 const PayerRequest = () => {
@@ -26,17 +26,30 @@ const PayerRequest = () => {
       <div className='mb-20 mt-10 mx-24'>
         <form container spacing={4} className='w-full flex justify-center h-auto' onSubmit={handleContactSubmit}>
           <div className='w-full'>
-            <div>
-              <TextField 
-                name="name" 
-                label="Name" 
-                variant='outlined' 
-                className='w-full !my-4'
-                required
-                value={payerReq.name}
-                onChange={(e) => setPayerReq({ ...payerReq, name: e.target.value })} 
-              />
-            </div>
+            <Grid container>
+              <Grid item sx={12} md={6}>
+                <TextField 
+                  name="name" 
+                  label="Name" 
+                  variant='outlined' 
+                  className='w-full !my-4 !mr-2'
+                  required
+                  value={payerReq.name}
+                  onChange={(e) => setPayerReq({ ...payerReq, name: e.target.value })} 
+                />
+              </Grid>
+              <Grid item sx={12} md={6}>
+                <TextField 
+                  name="phone" 
+                  label="Phone Number" 
+                  variant='outlined' 
+                  className='w-full !my-4 !ml-2'
+                  required
+                  value={payerReq.name}
+                  onChange={(e) => setPayerReq({ ...payerReq, name: e.target.value })} 
+                />
+              </Grid>
+            </Grid>
             <div>
               <TextField 
                 label="Payer Request" 

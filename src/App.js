@@ -8,6 +8,7 @@ import Events from './views/Events';
 import Contactus from './views/Contactus';
 import Aboutus from './views/Aboutus';
 import Offerings from './views/Offerings';
+import Ministries from './views/Ministries';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/offerings" element={<Offerings />} />
             <Route path="/contact-us" element={<Contactus />} />
+            <Route path="/ministries" element={<Ministries />} />
             {/* <Route path="/auth" exact element={<Auth />} />s */}
           </Routes>
           <Footer />

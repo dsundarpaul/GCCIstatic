@@ -1,6 +1,18 @@
-import { Typography, ImageList, ImageListItem } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
+import { Typography, ImageList, ImageListItem, CardActionArea, Modal, Box } from '@mui/material'
 import event1 from '../assets/events.jpg'
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '50%',
+  // height: '90vh',
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+};
 
 const itemData = [
   {
@@ -55,6 +67,18 @@ const itemData = [
 
 
 const Events = () => {
+
+  const [modalVisibility, setModalVisibility] = useState(false)
+  const [currentImg, setCurrentImg] = useState('')
+
+  const handleImageClick = (e) => {
+    console.log(e.target.src)
+    setCurrentImg(e.target.src)
+    setModalVisibility(true)
+  }
+
+  const handleModalClose = () => setModalVisibility(false) 
+
   return (
     // <div className='display:flex ml-[250px] mr-[250px] mt-[100px]'>
     //   <div className='  display:flex '>
@@ -96,7 +120,7 @@ const Events = () => {
     // </div>
 
 
-    <div>
+    <div>   
 
       <div className='flex justify-center mt-10'>
         <Typography variant='h2' className='text-[#C10000]'>GALLERY</Typography>
@@ -106,16 +130,28 @@ const Events = () => {
         <ImageList md={{ width: 100, height: 'auto' }} sx={{ width: 700, height: 1000, overflow: 'auto !important' }} cols={3} rowHeight={164}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
+            <CardActionArea onClick={(e) => handleImageClick(e)}>
+              <img
+                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+                className='w-full'
+              /> 
+            </CardActionArea>
           </ImageListItem>
         ))}
       </ImageList>
       </div>
+
+      <Modal 
+        open={modalVisibility}
+        onClose={handleModalClose}
+      >
+        <Box sx={style}>
+          <img src={currentImg} alt='' className='w-full' />
+        </Box>
+      </Modal>
 
     </div>
   )
