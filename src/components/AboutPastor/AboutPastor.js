@@ -4,7 +4,7 @@ import img from '../../assets/img3.png'
 const AboutPastor = () => {
   return (
     <div className='w-full banner__pad__marg'>
-      <Typography variant='h2' className='text-[#C10000] text-center'>Pastor. Sam Nathan</Typography>
+      <Typography variant='h3' className='text-[#C10000] text-center'>Pastor. Sam Nathan</Typography>
         <div className='my-10 w-full flex '>
             <div className='w-full flex justify-center'>
                 <img src={img} alt='img' className='h-[500px] w-[530px]' />

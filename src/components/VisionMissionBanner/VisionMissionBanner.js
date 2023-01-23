@@ -6,14 +6,14 @@ const VisionMissionBanner = () => {
     <div className='banner__pad__marg text-center'>
       <div className='mx-10'>
         <div>
-          <Typography variant='h3' className='text-[#C10000] !mb-10'>VISION</Typography>
-          <div className='text-fill text-2xl leading-relaxed flex items-center'>
+          <Typography variant='h3' className='text-[#C10000] !mb-10 !md:text-[10px]'>VISION</Typography>
+          <div className='text-fill leading-relaxed flex items-center lg:text-2xl md:text-xl'>
             OUR VISION IS TO CREATE ENVIRONMENTS WHERE PEOPLE ARE ENCOURAGED AND INSPIRED TO DRAW CLOSER TO GOD, TO CONNECT WITH OTHERS IN MEANINGFUL AND LIFE GIVING RELATIONSHIPS, AND TO DISCOVER THEIR GIFTS AND USE THEM FOR THE BETTERMENT OF OTHERS.
           </div>
         </div>
         <div className='banner__pad__marg'>
           <Typography variant='h3' className='text-[#C10000] !mb-10'>OUR MISSION IS TO LEAD PEOPLE INTO A LIFE-TRANSFORMING RELATIONSHIP WITH JESUS CHRIST </Typography>
-          <div className='text-fill text-2xl leading-relaxed flex items-center'>
+          <div className='text-fill text-2xl leading-relaxed flex items-center lg:text-2xl md:text-xl'>
           Whether it be through our Sunday services, small groups, mission trips, youth services, counseling, or growth classes, GCCI believes in giving you the tools you need to have a deeper relationship with God through Lord Jesus Christ.          </div>
         </div>
       </div>
